@@ -1,21 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
 body{
+    --couleur-header: #2b92b1; 
+    --couleur-fond: #f7f6e9;
+
     padding: 0;
     margin: 0;
     height: 100vh;
-    background-color: antiquewhite;
+    font-size: 16px;
+    color: black;
+    background-color: white;
     font-family: 'Raleway', sans-serif;
     text-align: center;
 }
 
-header{
-    background-color: white;
-    display: flex;
+h1, h2, h3, h4, p{
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
 }
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+header{
+    background-color: var(--couleur-fond);
+    padding: 1em;
+}
+
+header img{
+    padding: 1em;
+}
+
+header h1{
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+header h3{
+    padding: 1em;
+    font-style: italic;
+
+}
+
+header nav{
+    padding: 0.5em;
+}
+
+header a, a:link, a:visited{
+    color: black;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+header a:hover{
+    color: white;
+    background-color: var(--couleur-header);
+    transition: 0.5s;
+}
+
+header a.active{
+    color: white;
+    background-color: var(--couleur-header);
+}
+
+header div.filet{
+    height: 2px;
+    width: 80vw;
+    background-color: var(--couleur-header);
+    margin: 1em auto;
+}
+
+/* Main */
 
 main{
     min-height: 100vh;
+    background-color: var(--couleur-fond);
 }
 
-footer{
-    background-color: white;
+main h2{
+    font-size: 2em;
+    padding: 1em;
 }
+
+main .arianne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .arianne a{
+    padding: 0em;
+}
+
+main .arianne *{
+    padding: 0 0.2em;
+}
+
+main .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+main .item{
+    width: 20em;
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    box-shadow: 1px 1px 2px 1px #a3a3a3;
+    border-radius: 0.5em;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: var(--couleur-header);
+    padding: 1em;
+}
+
