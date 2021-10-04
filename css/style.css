@@ -20,12 +20,29 @@ h1, h2, h3, h4, p{
     padding: 0;
     margin: 0;
     font-size: 1em;
+    font-weight: 400;
 }
 
 a{
     display: inline-block;
     text-decoration: none;
     color: black;
+}
+
+/* Button vers top */
+
+.topButton{
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    border: 1px white solid;
+    background-color: var(--couleur-header);
+    color: white;
+    border-radius: 2em;
+    padding: 0.5em;
+    cursor: pointer;
 }
 
 /* Header */
@@ -41,6 +58,7 @@ header img{
 header h1{
     padding: 0.5em;
     font-size: 1.5em;
+    font-weight: 400;
 }
 
 header h3{
@@ -51,6 +69,11 @@ header h3{
 
 header nav{
     padding: 0.5em;
+}
+
+header img{
+    height: 250px;
+    width: 250px;
 }
 
 header a, a:link, a:visited{
