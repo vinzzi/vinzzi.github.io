@@ -250,8 +250,14 @@ section.projet h3{
     padding: 1em 2em;
 }
 
-section.projet a{
+section.projet>a{
     height: 0;
+}
+
+section.projet div>a{
+    padding: 1em 2em;
+    margin: 2em;
+    background-color: var(--couleur-header);
 }
 
 section.projet span{
