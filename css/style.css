@@ -6,15 +6,17 @@ body{
     --couleur-header: #2b92b1; 
     --couleur-header-fonce: #257f9b;
     --couleur-fond: #f7f6e9;
+    --couleur-fond-fonce: #d6d5c1;
 
     padding: 0;
     margin: 0;
     height: 100vh;
     font-size: 16px;
     color: black;
-    background-color: white;
+    background-color: var(--couleur-fond);
     font-family: 'Raleway', sans-serif;
     text-align: center;
+    min-width: 600px;
 }
 
 h1, h2, h3, h4, p{
@@ -104,7 +106,7 @@ header div.filet{
 /* Main */
 
 main{
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: var(--couleur-fond);
 }
 
@@ -132,7 +134,7 @@ main .gallery{
     flex-wrap: wrap;
     justify-content: center;
     width: 80vw;
-    margin: 0 auto;
+    margin: 0 auto 2em auto;
 }
 
 main .item{
@@ -152,6 +154,7 @@ main .item:hover{
 main .item img{
     height: 250px;
     width: 250px;
+    object-fit: cover;
 }
 
 main .item h4{
@@ -160,12 +163,149 @@ main .item h4{
     padding: 1em;
 }
 
-main article{
-    background-color: white;
+
+/* Section propos */
+
+section.propos article{
+    display: flex;
+    justify-content: center;
+    padding: 2em 5em;
 }
 
-main article p{
+section.propos article.resume{
+    text-align: left;
+    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
+}
+
+section.propos img{
+    height: 250px;
+    width: 250px;
+}
+
+section.propos article{
+    text-align: left;
+}
+
+section.propos h3 {
+    font-size: 1.5em;
+    padding: 0 2em;
+    color: var(--couleur-header);
+}
+
+section.propos h4 {
+    font-size: 1.3em;
+    padding: 0 2em;
+}
+
+section.propos p {
+    padding: 1em 3em;
+}
+
+section.propos ul{
+    padding: 0;
+}
+
+section.propos li{
+    list-style: none;
+    padding: 0.5em;
+}
+
+section.propos > h3 {
+    padding: 1em 0;
+}
+
+section.propos .competence{
+    text-align: center;
+    padding: 0 2em;
+}
+
+section.propos article.competences{
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+}
+
+/* Section projet */
+
+section.projet{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 60vw;
+    margin: 2em auto;
+}
+
+section.projet img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+section.projet p{
+    padding: 1em 2em;
+}
+
+section.projet h3{
+    padding: 1em 2em;
+}
+
+section.projet a{
+    height: 0;
+}
+
+section.projet span{
+    border: 1px white solid;
+    background-color: var(--couleur-header);
+    color: white;
+    border-radius: 2em;
+    padding: 0.3em;
+}
+
+section.flex{
     padding: 1em;
+    margin-bottom: 4em;
+}
+
+section.flex img{
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    object-fit: contain;
+}
+
+section.flex img:hover{
+    transform: scale(2.5);
+    transition: transform 0.5s;
+}
+
+/* Section contact */
+
+section.contact{
+    width: 70vw;
+    margin: 1em auto;
+    border-radius: 5em;
+}
+
+section.contact p{
+    padding: 1em;
+}
+
+section.contact p.adresse{
+    color: var(--couleur-header);
+    background-color: white;
+    border-radius: 0.5em;
+    width: min-content;
+    margin: 1em auto;
+}
+
+section.contact a{
+    color: white;
+    background-color: var(--couleur-header);
+}
+
+section.contact a:hover{
+    background-color: var(--couleur-header-fonce);
 }
 
 
