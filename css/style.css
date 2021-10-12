@@ -17,10 +17,12 @@ body{
     font-family: 'Raleway', sans-serif;
     text-align: center;
     min-width: 600px;
+    background-image: url("/images/backgroundTest.png");
+    background-repeat: repeat;
 }
 
 h1, h2, h3, h4, p{
-    padding: 0;
+    padding: 1em 0;
     margin: 0;
     font-size: 1em;
     font-weight: 400;
@@ -48,9 +50,9 @@ a{
     cursor: pointer;
 }
 
+
 /* Header */
 header{
-    background-color: var(--couleur-fond);
     padding: 1em;
 }
 
@@ -60,7 +62,7 @@ header img{
 
 header h1{
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: 400;
 }
 
@@ -107,7 +109,6 @@ header div.filet{
 
 main{
     min-height: 70vh;
-    background-color: var(--couleur-fond);
 }
 
 main h2{
@@ -161,6 +162,27 @@ main .item h4{
     font-weight: bold;
     font-size: 1.2em;
     padding: 1em;
+}
+
+.listeProjet{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--couleur-header-fonce);
+    border-radius: 1em;
+    margin: 0 auto;
+    width: 40vw;
+}
+
+.listeProjet a{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin: 0 0.5em;
+}
+
+.listeProjet a:hover{
+    background-color: var(--couleur-header);
 }
 
 
@@ -270,19 +292,27 @@ section.projet span{
 
 section.flex{
     padding: 1em;
-    margin-bottom: 4em;
+    margin-bottom: 5.5em;
+    display: flex;
+    justify-content: center;
 }
 
 section.flex img{
     width: 200px;
     height: 200px;
     margin: 1em;
+    position: relative;
     object-fit: contain;
 }
 
 section.flex img:hover{
     transform: scale(2.5);
     transition: transform 0.5s;
+    z-index: 99;
+}
+
+section>img{
+    padding: 1em 0;
 }
 
 /* Section contact */
@@ -320,5 +350,9 @@ section.contact a:hover{
 footer{
     background-color: var(--couleur-header);
     padding: 1em;
+}
+
+footer p{
+    padding: 0em;
 }
 
