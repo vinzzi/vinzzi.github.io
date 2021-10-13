@@ -261,7 +261,7 @@ section.projet{
 section.projet img{
     width: 400px;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 section.projet p{
