@@ -108,7 +108,7 @@ header div.filet{
 /* Main */
 
 main{
-    min-height: 70vh;
+    min-height: 80vh;
 }
 
 main h2{
@@ -254,19 +254,26 @@ section.projet{
     display: flex;
     justify-content: center;
     text-align: left;
-    width: 60vw;
+    width: 80vw;
+    min-width: 900px;
     margin: 2em auto;
 }
 
 section.projet img{
-    width: 400px;
+    width: 50%;
     height: 400px;
     object-fit: contain;
+}
+
+section.projet>div{
+    width: 40vw;
+    min-width: 450px;
 }
 
 section.projet p{
     padding: 1em 2em;
 }
+
 
 section.projet h3{
     padding: 1em 2em;
@@ -292,8 +299,9 @@ section.projet span{
 
 section.flex{
     padding: 1em;
-    margin-bottom: 5.5em;
+    margin-bottom: 5em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -306,8 +314,9 @@ section.flex img{
 }
 
 section.flex img:hover{
-    transform: scale(2.5);
-    transition: transform 0.5s;
+    transform: scale(3.5);
+    transition: transform 0.5s, margin-bottom 0.5s;
+    margin-bottom: 10em;
     z-index: 99;
 }
 
