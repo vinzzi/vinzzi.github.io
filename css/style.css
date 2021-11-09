@@ -5,8 +5,8 @@
 body{
     --couleur-header: #2b92b1; 
     --couleur-header-fonce: #257f9b;
-    --couleur-fond: #f7f6e9;
-    --couleur-fond-fonce: #d6d5c1;
+    --couleur-fond: #f6f7ec;
+    --couleur-fond-fonce: #dddccf;
 
     padding: 0;
     margin: 0;
@@ -56,12 +56,8 @@ header{
     padding: 1em;
 }
 
-header img{
-    padding: 1em;
-}
-
 header h1{
-    padding: 0.5em;
+    padding: 0.1em;
     font-size: 3em;
     font-weight: 400;
 }
@@ -77,8 +73,9 @@ header nav{
 }
 
 header img{
-    height: 250px;
-    width: 250px;
+    padding: 0.5em;
+    height: 200px;
+    width: 200px;
 }
 
 header nav a, a:link, a:visited{
@@ -99,8 +96,8 @@ header nav a.active{
 }
 
 header div.filet{
-    height: 2px;
-    width: 80vw;
+    height: 0.5px;
+    width: 60vw;
     background-color: var(--couleur-header);
     margin: 1em auto;
 }
@@ -338,19 +335,34 @@ section.contact p{
 
 section.contact p.adresse{
     color: var(--couleur-header);
-    background-color: white;
-    border-radius: 0.5em;
     width: min-content;
     margin: 1em auto;
 }
 
-section.contact a{
-    color: white;
-    background-color: var(--couleur-header);
+section.contact .logo{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
 }
 
-section.contact a:hover{
-    background-color: var(--couleur-header-fonce);
+section.contact .gitHub{
+    height: 20px;
+    width: 170px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section.contact .cv{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 
@@ -365,3 +377,11 @@ footer p{
     padding: 0em;
 }
 
+/* Global */
+
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
