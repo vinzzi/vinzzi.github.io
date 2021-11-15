@@ -330,6 +330,8 @@ section.contact{
     width: 70vw;
     margin: 1em auto;
     border-radius: 5em;
+    background-color: white;
+    padding: 1em;
 }
 
 section.contact p{
