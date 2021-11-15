@@ -1,8 +1,14 @@
 var monButton = null;
 
 window.addEventListener("load", ()=>{
-    header();
+    main();
 });
+
+
+function main(){
+    header();
+    footer();
+}
 
 function header() {
     // class="active"
