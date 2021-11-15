@@ -1,5 +1,31 @@
 var monButton = null;
 
+window.addEventListener("load", ()=>{
+    header();
+});
+
+function header() {
+    // class="active"
+    var header = document.getElementById("header");
+    header.innerHTML= 
+        '<a href="/index.html">'+
+            '<img src="/images/VinzziLogoBlue.png" alt="logo">'+
+        '</a>'+
+        '<h1>Vincent Chalifoux</h1>'+
+        '<h3>Développeur et intégrateur de jeux vidéo</h3>'+
+        '<nav>'+
+            '<a href="/index.html">À propos</a>'+
+            '<a href="/projets.html">Portfolio</a>'+
+            '<a href="/contact.html">Contact</a>'+
+        '</nav>'+
+        '<div class="filet"></div>';
+}
+
+function footer(){
+    var footer = document.getElementById("footer");
+    footer.innerHTML = '<p>©Tous droits réservés</p>';
+}
+
 window.addEventListener("load", () => {
     var main = document.getElementById("main");
     monButton = document.createElement("button");
