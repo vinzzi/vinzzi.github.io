@@ -20,7 +20,7 @@ body{
     min-width: 600px;
     background-image: url("/images/backgroundTest.png");
     background-repeat: repeat;
-    background-size: 50%;
+    background-size: 75%;
     line-height: 1.5em;
 }
 
