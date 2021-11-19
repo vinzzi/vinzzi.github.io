@@ -46,6 +46,7 @@ main{
 
 section{
     background-color: var(--couleur-bleuPale);
+    border-radius: 1em;
     padding: 1em;
     margin: 2em;
 }
