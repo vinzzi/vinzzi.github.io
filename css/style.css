@@ -3,7 +3,7 @@
 
 /* Global */
 body{
-    --couleur-header: #2b92b1; 
+    --couleur-header: #4ca4be; 
     --couleur-header-fonce: #257f9b;
     --couleur-bleuPale: #bcd4db5d;
     --couleur-fond: #f7f8f2;
@@ -21,16 +21,83 @@ body{
     background-image: url("/images/backgroundTest.png");
     background-repeat: repeat;
     background-size: 50%;
+    line-height: 1.5em;
 }
 
-h2, h3, h4{
+h1, h2, h3, h4{
     font-weight: 400;
+    margin: 0;
 }
 
 a{
     display: inline-block;
     text-decoration: none;
     color: black;
+}
+
+main{
+    min-height: 80vh;
+    margin: 1em auto;
+    padding: 1em;
+    width: 70vw;
+    min-width: 700px;
+    text-align: center;
+}
+
+section{
+    background-color: var(--couleur-bleuPale);
+    padding: 1em;
+    margin: 2em;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2em;
+}
+  
+.column {
+    flex: 50%;
+}
+
+img{
+    border-radius: 0.5em;
+}
+
+.image{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 500px;
+    min-width: 400px;
+}
+
+.imageCode{
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: auto;
+    width: 100%;
+    min-width: 400px;
+}
+
+.test{
+    width: 100%;
+    height: auto;
+}
+
+.cover{
+    background-size: cover;
+}
+
+.contain{
+    background-size: contain;
+}
+
+.filet{
+    width: 20%;
+    height: 1px;
+    background-color: var(--couleur-header-fonce);
+    margin: 1em auto;
 }
 
 /* Button vers top */
@@ -49,23 +116,15 @@ a{
     cursor: pointer;
 }
 
-main{
-    min-height: 80vh;
-    margin: 1em auto;
-    padding: 1em;
-    width: 80vw;
-    min-width: 500px;
-    text-align: center;
-}
-
-section{
-    margin: auto;
-}
 
 
 /* Header */
-header{
-    padding-top: 1em;
+
+header .barreHeader{
+    background-color: var(--couleur-header);
+    width: 100%;
+    height: 20px;
+    margin-bottom: 1em;
 }
 
 header h1{
@@ -76,17 +135,16 @@ header h1{
 
 header h3{
     padding: 1em;
-    font-weight: 400;
+    font-weight: 300;
     font-style: italic;
 
 }
 
 header nav{
-    padding: 0.5em;
+    padding: 0.8em;
 }
 
 header img{
-    padding: 0.5em;
     height: 200px;
     width: 200px;
 }
@@ -110,7 +168,7 @@ header nav a.active{
 
 header div.filet{
     height: 0.5px;
-    width: 60vw;
+    width: 40%;
     background-color: var(--couleur-header);
     margin: 1em auto;
 }
@@ -142,6 +200,7 @@ main h2{
 main h3{
     font-weight: 300;
     font-size: 1.5em;
+    padding: 0.5em;
 }
 
 
@@ -149,8 +208,7 @@ main .gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80vw;
-    margin: 0 auto 2em auto;
+    padding: 1em;
 }
 
 main .item{
@@ -171,12 +229,14 @@ main .item img{
     height: 250px;
     width: 250px;
     object-fit: cover;
+    border-radius: 0.5em;
 }
 
 main .item h4{
     font-weight: 500;
-    font-size: 1.2em;
-    padding: 1em;
+    color: var(--couleur-header-fonce);
+    font-size: 1.5em;
+    padding: 0em;
 }
 
 .listeProjet{
@@ -203,114 +263,55 @@ main .item h4{
 
 /* Section propos */
 
-section.propos {
-    background-color: var(--couleur-bleuPale);
-    border-radius: 5em;
-    padding: 1em;
-}
-
-section.propos article{
-    display: flex;
-    justify-content: center;
-    padding: 2em 5em;
-}
-
-section.propos article.resume{
-    text-align: left;
-    align-items: center;
-    width: 70vw;
-    margin: 0 auto;
-}
-
-section.propos img{
-    height: 250px;
-    width: 250px;
-}
-
-section.propos article{
+.propos article{
     text-align: left;
 }
 
-section.propos h3 {
-    font-size: 1.5em;
-    padding: 0 2em;
-    color: var(--couleur-header);
+.propos h3{
+    padding: 1.5em;
+    font-weight: 400;
+    color: var(--couleur-header-fonce);
 }
 
-section.propos h4 {
-    font-size: 1.3em;
-    padding: 0 2em;
+.propos h4{
+    font-size: 1.2em;
+    color: var(--couleur-header-fonce);
 }
 
-section.propos p {
-    padding: 1em 3em;
+.propos p{
+    padding: 1em 4em;
 }
 
-section.propos ul{
+.propos ul{
     padding: 0;
 }
 
-section.propos li{
+.propos li{
     list-style: none;
     padding: 0.5em;
 }
 
-section.propos > h3 {
+.propos > h3 {
     padding: 1em 0;
 }
 
-section.propos .competence{
+.propos .competence{
     text-align: center;
-    padding: 0 2em;
 }
 
-section.propos article.competences{
-    flex-wrap: wrap;
-    margin-bottom: 3em;
+.propos .row.comp{
+    align-items:flex-start;
 }
 
 /* Section projet */
 
-section.projet{
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    width: 80vw;
-    min-width: 900px;
-    margin: 2em auto;
+.backButton{
+    position: fixed;
+    bottom: 80px;
+    right: 23px;
 }
 
-section.projet img{
-    width: 50%;
-    height: 400px;
-    object-fit: contain;
-}
-
-section.projet>div{
-    width: 40vw;
-    min-width: 450px;
-}
-
-section.projet p{
-    padding: 1em 2em;
-}
-
-
-section.projet h3{
-    padding: 1em 2em;
-}
-
-section.projet>a{
-    height: 0;
-}
-
-section.projet div>a{
-    padding: 1em 2em;
-    margin: 2em;
-    background-color: var(--couleur-header);
-}
-
-section.projet span{
+.backButton span{
     border: 1px white solid;
     background-color: var(--couleur-header);
     color: white;
@@ -318,15 +319,34 @@ section.projet span{
     padding: 0.3em;
 }
 
-section.flex{
+.resumeProjet{
+    text-align: left;
+}
+
+.resumeProjet h2{
+    padding: 0.5em 1em 0em 1em;
+}
+
+.resumeProjet p{
+    padding: 1em 3em;
+}
+
+.resumeProjet h3{
+    padding: 1em 2em;
+}
+
+.resumeProjet ul{
+    padding: 0 5em;
+}
+
+.flex{
     padding: 1em;
-    margin-bottom: 5em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-section.flex img{
+.flex>img{
     width: 200px;
     height: 200px;
     margin: 1em;
@@ -334,25 +354,14 @@ section.flex img{
     object-fit: contain;
 }
 
-section.flex img:hover{
+.flex>img:hover{
     transform: scale(3.5);
     transition: transform 0.5s, margin-bottom 0.5s;
     margin-bottom: 10em;
     z-index: 99;
 }
 
-section>img{
-    padding: 1em 0;
-}
-
 /* Section contact */
-
-section.contact{
-    border-radius: 5em;
-    background-color: var(--couleur-bleuPale);
-    padding: 1em;
-    margin: 1em;
-}
 
 section.contact p{
     padding: 0 1em;
@@ -369,16 +378,26 @@ section.contact .mailbox{
     width: 500px;
 }
 
+section.contact .flexContact{
+    padding: 2em;
+}
+
+.flexContact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 
 /* Footer */
 
 footer{
     background-color: var(--couleur-header);
-    padding: 1em;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-footer p{
-    padding: 0em;
 }
 
 /* Global */

@@ -14,6 +14,7 @@ function header() {
     // class="active"
     var header = document.getElementById("header");
     header.innerHTML= 
+        '<div class="barreHeader"></div>'+
         '<a href="/index.html">'+
             '<img src="/images/VinzziLogoBlue.png" alt="logo">'+
         '</a>'+
@@ -29,7 +30,14 @@ function header() {
 
 function footer(){
     var footer = document.getElementById("footer");
-    footer.innerHTML = '<p>©Tous droits réservés</p>';
+    footer.innerHTML = 
+        '<p>Pour me rejoindre :</p>'+
+        '<a href="https://github.com/vinzzi" target="_blank">'+
+            '<img src="/images/logo/GitHub-Mark-32px.png" alt="">'+
+        '</a>'+
+        '<a href="https://linkedin.com/in/vincent-chalifoux-588755141" target="_blank">'+
+            '<img src="/images/logo/LI-In-Bug.png" alt="LinkedinLogo" class="logo">'+
+        '</a>';
 }
 
 window.addEventListener("load", () => {
