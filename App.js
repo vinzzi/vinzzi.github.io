@@ -31,13 +31,14 @@ function header() {
 function footer(){
     var footer = document.getElementById("footer");
     footer.innerHTML = 
-        '<p>Pour me rejoindre :</p>'+
+        '<p></p>'+
         '<a href="https://github.com/vinzzi" target="_blank">'+
             '<img src="/images/logo/GitHub-Mark-32px.png" alt="">'+
         '</a>'+
         '<a href="https://linkedin.com/in/vincent-chalifoux-588755141" target="_blank">'+
             '<img src="/images/logo/LI-In-Bug.png" alt="LinkedinLogo" class="logo">'+
-        '</a>';
+        '</a>'+
+        '<p>©Tous droits réservés - 2021</p>';
 }
 
 window.addEventListener("load", () => {
