@@ -1,3 +1,3 @@
 # vinzzi.github.io
 
-# You read me, cool.
+You read me, thanks.
