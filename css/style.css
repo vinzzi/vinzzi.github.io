@@ -69,7 +69,7 @@ img{
 .image{
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 500px;
+    height: 400px;
     min-width: 400px;
 }
 
@@ -280,7 +280,7 @@ main .item h4{
 }
 
 .propos p{
-    padding: 2em;
+    padding: 1em 3em;
 }
 
 .propos ul{
@@ -329,7 +329,7 @@ main .item h4{
 }
 
 .resumeProjet p{
-    padding: 1em 3em;
+    padding: 0.5em 3em;
 }
 
 .resumeProjet h3{
@@ -360,6 +360,27 @@ main .item h4{
     transition: transform 0.5s, margin-bottom 0.5s;
     margin-bottom: 10em;
     z-index: 99;
+}
+
+.steamLink{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    border-radius: 0.5em;
+}
+
+.steamLink>a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.steamLink p{
+    padding: 0 0.7em;
+    margin: 0;
 }
 
 /* Section contact */
