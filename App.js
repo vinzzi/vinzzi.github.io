@@ -6,8 +6,8 @@ window.addEventListener("load", ()=>{
 
 
 function main(){
-    header();
-    footer();
+    // header();
+    // footer();
 }
 
 function header() {

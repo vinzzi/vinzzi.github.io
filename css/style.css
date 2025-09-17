@@ -269,7 +269,7 @@ main .item h4{
 }
 
 .propos h3{
-    padding: 1.5em;
+    padding: 1em;
     font-weight: 400;
     color: var(--couleur-header-fonce);
 }
@@ -280,7 +280,7 @@ main .item h4{
 }
 
 .propos p{
-    padding: 1em 4em;
+    padding: 2em;
 }
 
 .propos ul{
@@ -289,7 +289,7 @@ main .item h4{
 
 .propos li{
     list-style: none;
-    padding: 0.5em;
+    padding: 0 0.5em;
 }
 
 .propos > h3 {
@@ -333,11 +333,11 @@ main .item h4{
 }
 
 .resumeProjet h3{
-    padding: 1em 2em;
+    padding: 0 1em;
 }
 
 .resumeProjet ul{
-    padding: 0 5em;
+    padding: 1em 5em;
 }
 
 .flex{
